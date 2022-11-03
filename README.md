@@ -7,14 +7,24 @@ Usage
 First install using npm:
 
     npm install uniq
-    
+
+```javascript
+import uniq from "uniq";
+```
+
+Or import for browsers and deno:
+
+```javascript
+import uniq from "https://code4fukui.github.io/uniq/uniq.js";
+```
+
 Then use it as follows:
 
 ```javascript
 
 var arr = [1, 1, 2, 2, 3, 5]
 
-require("uniq")(arr)
+uniq(arr)
 console.log(arr)
 
 //Prints:
@@ -23,7 +33,7 @@ console.log(arr)
 //
 ```
 
-## `require("uniq")(array[, compare, sorted])`
+## `uniq(array[, compare, sorted])`
 Removes all duplicates from a sorted array in place.
 
 * `array` is the array to remove items from
